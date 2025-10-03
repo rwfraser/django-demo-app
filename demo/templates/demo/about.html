@@ -1,0 +1,56 @@
+{% extends 'demo/base.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<h1>📖 About Django Demo App</h1>
+
+<div class="info-card">
+    <h3>🎯 Purpose</h3>
+    <p>This Django demonstration application was created to showcase a complete development-to-deployment workflow using modern web technologies and cloud infrastructure.</p>
+</div>
+
+<div class="info-card">
+    <h3>🛠️ Technology Stack</h3>
+    <ul>
+        <li><strong>Backend:</strong> Django 4.2.24 (Python Web Framework)</li>
+        <li><strong>Frontend:</strong> HTML5, CSS3 with responsive design</li>
+        <li><strong>Database:</strong> SQLite (development) / PostgreSQL (production)</li>
+        <li><strong>Deployment:</strong> Fly.io cloud platform</li>
+        <li><strong>Version Control:</strong> Git with GitHub integration</li>
+        <li><strong>Containerization:</strong> Docker for consistent deployments</li>
+    </ul>
+</div>
+
+<div class="info-card">
+    <h3>🚀 Deployment Workflow</h3>
+    <ol>
+        <li><strong>Development:</strong> Local Django development with virtual environment</li>
+        <li><strong>Version Control:</strong> Git repository with GitHub hosting</li>
+        <li><strong>Containerization:</strong> Docker configuration for Fly.io deployment</li>
+        <li><strong>Cloud Deployment:</strong> Automated deployment to Fly.io from GitHub</li>
+        <li><strong>Monitoring:</strong> Health check endpoints for application monitoring</li>
+    </ol>
+</div>
+
+<div class="info-card">
+    <h3>✨ Key Features</h3>
+    <ul>
+        <li>📱 <strong>Responsive Design:</strong> Works seamlessly on all devices</li>
+        <li>🔍 <strong>Health Monitoring:</strong> Built-in API endpoints for status checks</li>
+        <li>⚡ <strong>Fast Deployment:</strong> Optimized for quick cloud deployment</li>
+        <li>🔒 <strong>Production Ready:</strong> Environment-based configuration</li>
+        <li>📊 <strong>System Info:</strong> Real-time server and runtime information</li>
+    </ul>
+</div>
+
+<div class="info-card">
+    <h3>🌐 API Endpoints</h3>
+    <p>This application provides the following API endpoints:</p>
+    <ul>
+        <li><code>/</code> - Main application homepage</li>
+        <li><code>/about/</code> - Detailed information about the application</li>
+        <li><code>/api/status/</code> - JSON health check endpoint</li>
+    </ul>
+</div>
+{% endblock %}

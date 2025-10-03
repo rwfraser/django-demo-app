@@ -1,0 +1,37 @@
+{% extends 'demo/base.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<h1>🚀 Welcome to Django Demo App!</h1>
+
+<p>This is a simple Django demonstration application created for deployment to Fly.io from GitHub.</p>
+
+<div class="info-card">
+    <h3>📊 System Information</h3>
+    <p><strong>Current Time:</strong> {{ current_time|date:"F j, Y, g:i a T" }}</p>
+    <p><strong>Python Version:</strong> {{ python_version }}</p>
+    <p><strong>Django Version:</strong> {{ django_version }}</p>
+    <p><strong>Platform:</strong> {{ platform }}</p>
+</div>
+
+<div class="info-card">
+    <h3>🌟 Features</h3>
+    <ul>
+        <li>✅ Simple Django web application</li>
+        <li>✅ Beautiful responsive design</li>
+        <li>✅ System information display</li>
+        <li>✅ API endpoint for health checks</li>
+        <li>✅ Ready for Fly.io deployment</li>
+        <li>✅ GitHub integration ready</li>
+    </ul>
+</div>
+
+<div class="info-card">
+    <h3>🔗 Quick Links</h3>
+    <p>
+        <a href="{% url 'demo:about' %}" style="color: #667eea;">📖 Learn More</a> |
+        <a href="{% url 'demo:api_status' %}" style="color: #667eea;">🔍 Check API Status</a>
+    </p>
+</div>
+{% endblock %}
